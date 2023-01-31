@@ -1,4 +1,4 @@
-module chr141.com/repos/monorepo/experimental/netlink
+module github.com/psranga/monorepo/experimental/nwhello
 
 go 1.18
 

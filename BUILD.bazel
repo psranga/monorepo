@@ -1,6 +1,6 @@
 load("@bazel_gazelle//:def.bzl", "gazelle")
 
-# gazelle:prefix chr141.com/repos/monorepo
+# gazelle:prefix github.com/psranga/monorepo
 gazelle(name = "gazelle")
 
 gazelle(
