@@ -1,0 +1,15 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "nwhello_lib",
+    srcs = ["nwhello.go"],
+    importpath = "github.com/psranga/monorepo/experimental/nwhello",
+    visibility = ["//visibility:private"],
+    deps = ["@com_github_vishvananda_netlink//:go_default_library"],
+)
+
+go_binary(
+    name = "nwhello",
+    embed = [":nwhello_lib"],
+    visibility = ["//visibility:public"],
+)
