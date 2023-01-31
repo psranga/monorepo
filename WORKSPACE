@@ -34,6 +34,20 @@ go_repository(
     version = "v1.1.0",
 )
 
+go_repository(
+    name = "com_github_vishvananda_netns",
+    importpath = "github.com/vishvananda/netns",
+    sum = "h1:OviZH7qLw/7ZovXvuNyL3XQl8UFofeikI1NW1Gypu7k=",
+    version = "v0.0.0-20191106174202-0a2b9b5464df",
+)
+
+go_repository(
+    name = "org_golang_x_sys",
+    importpath = "golang.org/x/sys",
+    sum = "h1:/d2cWp6PSamH4jDPFLyO150psQdqvtoNX8Zjg3AQ31g=",
+    version = "v0.0.0-20190606203320-7fc4e5ec1444",
+)
+
 go_rules_dependencies()
 
 go_register_toolchains(version = "1.18.10")
