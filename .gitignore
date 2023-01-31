@@ -1,0 +1,6 @@
+# bazel's work dirs.
+bazel-*
+
+# Vim temp files.
+*.swp
+*.swo
